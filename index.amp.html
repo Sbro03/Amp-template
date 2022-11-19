@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Amp template</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Google Analytics -->
+    <meta name="amp-google-client-id-api" content="googleanalytics">
+
+    <!-- Favicon Links -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="../img/land-see/content/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/land-see/content/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/land-see/content/favicon-16x16.png">
+    <link rel="manifest" href="../img/land-see/content/site.webmanifest"> -->
+
+    <!-- Customable Files -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Amp Cdn Js -->
+    <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+
+    <!-- Amp Elements -->
+    <script custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js" async=""></script>
+    <script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async=""></script>
+    <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async=""></script>
+    <script custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js" async=""></script>
+    <script custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" async=""></script>
+    <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async=""></script>
+    <script custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js" async=""></script>
+    <script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async=""></script>
+    <script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async=""></script>
+    <script custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" async=""></script>
+    <script async custom-element="amp-image-slider" src="https://cdn.ampproject.org/v0/amp-image-slider-0.1.js"></script>
+    <script custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js" async=""></script>
+    <script custom-element="amp-fx-flying-carpet" src="https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js" async=""></script>
+    <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js" async=""></script>
+
+    <!-- Typeform Script -->
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+
+    <!-- Google Fonts Scripts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header_container row">
+        <a href="#" class="icon">
+            <amp-img src="./image/logo.png" width="150" height="146.77" layout="responsive"></amp-img>
+        </a>
+        <div class="links_container row" id="menu">
+            <a href="#activities">Our products</a>
+            <a href="#team">The team</a>
+            <a href="#intro">Work with us</a>
+            <a href="#contact" class="button">Contact us</a>
+        </div>
+        <button type="button" id="button-menu" class="hamburger" aria-label="menu" aria-expanded="false" onclick="HamburgerMenu()">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                <path class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+                </path>
+                <path class="line line2" d="M 20,50 H 80"></path>
+                <path class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+                </path>
+            </svg>
+        </button>
+    </header>
+    <section id="hero" class="hero_container grid-row grid-2">
+        <div class="text_content column">
+            <div>
+                <h1>GROW WITH EQUIPE CREATIVE AGENCY!</h1>
+            </div>
+            <div class="button_container">
+                <a class="button">Inizia subito</a>
+            </div>
+        </div>
+        <amp-img src="./image/bg.png" layout="responsive" width="1240" height="990.97"></amp-img>
+    </section>
+    <section id="activities" class="projects_container column">
+        <div class="text-content">
+            <h1>Our projects</h2>
+        </div>
+        <div class="grid">
+            <div class="item-3x3 slide"></div>
+            <div class="item-2x1 slide"></div>
+            <div class="item-3x2 slide"></div>
+            <div class="item-2x2 slide"></div>
+            <div class="item-3x1 slide"></div>
+        </div>
+    </section>
+    <section id="intro" class="intro_container column">
+        <div class="grid-row grid-75-25">
+            <div class="text_content column">
+                <h1>Lorem, ipsum dolor.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium impedit facilis aliquid dignissimos voluptates aspernatur voluptatem dicta nostrum quam?</p>
+            </div>
+            <div class="icon">
+                <svg width="54" height="47" viewBox="0 0 54 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M51.385 0H2.61504C1.17062 0 0 1.17075 0 2.61504V33.211C0 34.6553 1.17062 35.826 2.61504 35.826H20.8547V41.7517H13.7571C12.4233 41.7517 11.3381 42.8368 11.3381 44.1706C11.3381 45.5044 12.4233 46.5895 13.7571 46.5895H40.2429C41.5767 46.5895 42.6619 45.5044 42.6619 44.1706C42.6619 42.8368 41.5767 41.7517 40.2429 41.7517H33.1453V35.826H51.385C52.8294 35.826 54 34.6553 54 33.211V2.61504C54 1.17075 52.8294 0 51.385 0ZM50.0774 31.9035H3.92256V3.92256H50.0774V31.9035Z"
+                        fill="var(--brandColor)"></path>
+                    <path
+                        d="M12.368 19.3903L20.6163 23.226C20.8296 23.3248 21.0566 23.3748 21.2913 23.3748C21.597 23.3748 21.8948 23.288 22.1538 23.1233C22.6177 22.8269 22.8947 22.3218 22.8947 21.7719V21.7298C22.8947 21.1086 22.5305 20.538 21.9669 20.276L16.808 17.8793L21.967 15.4821C22.5305 15.2201 22.8947 14.6494 22.8947 14.0284V13.9867C22.8947 13.4361 22.6176 12.931 22.154 12.6355C21.8974 12.4716 21.5987 12.385 21.2902 12.385C21.0577 12.385 20.8243 12.4361 20.6155 12.5332L12.3678 16.3684C11.8046 16.6305 11.4407 17.2011 11.4407 17.8219V17.9367C11.4405 18.5568 11.8043 19.1272 12.368 19.3903Z"
+                        fill="var(--brandColor)"></path>
+                    <path
+                        d="M22.968 27.2029C23.2689 27.6147 23.7528 27.8605 24.2626 27.8605H24.3038C25.0035 27.8605 25.6168 27.4125 25.8299 26.747L31.2636 9.9114C31.4194 9.4254 31.3329 8.88918 31.032 8.47653C30.7311 8.06479 30.2472 7.81885 29.7374 7.81885H29.6964C28.9963 7.81885 28.3826 8.2668 28.1693 8.93233L22.735 25.7694C22.5805 26.2558 22.6675 26.7915 22.968 27.2029Z"
+                        fill="var(--brandColor)"></path>
+                    <path
+                        d="M31.1054 14.0283C31.1054 14.6489 31.4691 15.2195 32.033 15.4825L37.1919 17.8792L32.033 20.2759C31.4694 20.5379 31.1052 21.1085 31.1052 21.7297V21.7718C31.1052 22.3216 31.382 22.8267 31.8465 23.1233C32.1046 23.2878 32.4027 23.3747 32.7088 23.3747C32.9431 23.3747 33.1699 23.3246 33.3846 23.2254L41.6326 19.3898C42.1957 19.1271 42.5595 18.5566 42.5595 17.9365V17.8217C42.5595 17.2009 42.1956 16.6303 41.6321 16.3681L33.3842 12.5326C33.1762 12.436 32.9432 12.3848 32.7106 12.3848C32.4023 12.3848 32.1034 12.4713 31.8471 12.6348C31.3824 12.9308 31.1054 13.4359 31.1054 13.9865V14.0283Z"
+                        fill="var(--brandColor)"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="grid-row grid-75-25">
+            <div class="text_content column">
+                <h1>Lorem, ipsum dolor.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium praesentium impedit facilis aliquid dignissimos voluptates aspernatur voluptatem dicta nostrum quam?</p>
+            </div>
+            <div class="icon">
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M0 48.8092H8.49825V16.75H0V48.8092ZM0 12.9262H8.49825V5.19067H0V12.9262ZM53.1765 18.8965C52.6264 16.3855 51.597 14.0534 50.085 11.8968C48.2018 9.23055 45.738 7.39792 42.6971 6.39892C40.9118 5.81167 38.6741 5.4978 35.9876 5.4573H17.2935V48.8092H35.9842C42.5385 48.8092 47.385 46.1126 50.5238 40.7227C52.8424 36.7199 54 31.8397 54 26.0718C54 23.797 53.7266 21.4075 53.1765 18.8965ZM43.4093 34.9548C41.7218 39.1702 38.7349 41.2796 34.4554 41.2796H26.0888V12.9835H34.4554C38.5796 12.9835 41.3336 14.1648 42.7174 16.5273C44.1011 18.8898 44.793 22.2783 44.793 26.6894C44.793 29.8889 44.3306 32.6429 43.4093 34.9548Z"
+                        fill="var(--brandColor)"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team_container column">
+        <div class="text-content">
+            <h1>Our team</h1>
+        </div>
+        <div class="grid-row grid-3">
+            <div class="slide column">
+                <div class="img">
+                    <amp-img src="./image/team1.jpg" width="1" height="1" layout="responsive"></amp-img>
+                </div>
+                <div class="text-content">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, optio.</p>
+                </div>
+            </div>
+            <div class="slide column">
+                <div class="img">
+                    <amp-img src="./image/team2.jpg" width="1" height="1" layout="responsive"></amp-img>
+                </div>
+                <div class="text-content">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, optio.</p>
+                </div>
+            </div>
+            <div class="slide column">
+                <div class="img">
+                    <amp-img src="./image/team3.jpg" width="1" height="1" layout="responsive"></amp-img>
+                </div>
+                <div class="text-content">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, optio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact_container column">
+        <div class="text-content">
+            <h1>Contact us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga distinctio praesentium, iure delectus nisi similique ipsam repellat tempora odio? Magnam libero magni molestiae at reprehenderit!</p>
+        </div>
+        <div class="slide" data-tf-widget="wgv8ATFi" data-tf-iframe-props="title=Amp template" data-tf-medium="snippet"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+    </section>
+    <footer class="footer_container column">
+        <div class="grid-row grid-3">
+            <div class="icon">
+                <amp-img src="./image/logo.png" width="150" height="146.77" layout="responsive"></amp-img>
+            </div>
+            <div class="text-content">
+                <h2>Socials</h2>
+                <ul>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                </ul>
+            </div>
+            <div class="text-content">
+                <h2>Work with us</h2>
+                <ul>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="links_container text-content">
+            <h3><a href="">Informativa privacy</a></h3>
+            <h3>Sede legale - P.Iva</h3>
+            <h3>Fatto con amore da <a href="www.e-quipe.net" target="_blank">Equipe</a></h3>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>
